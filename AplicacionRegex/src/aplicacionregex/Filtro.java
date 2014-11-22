@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  * @author kaisher
  */
 public class Filtro {
-    //--- Patrones de busqueda de cada tipo-------//
+    //--- Patrones de busqueda de cada tipo---------//
     private static final String FILTRODNI ="\\d{8}[A-Z]";
     private static final String FILTROEMAIL = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
             + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
