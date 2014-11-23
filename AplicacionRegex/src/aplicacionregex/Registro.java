@@ -57,11 +57,11 @@ public class Registro {
             a.createNewFile();
             FileWriter fichero=new FileWriter("reg.txt",false);
             PrintWriter pw= new PrintWriter(fichero);
-            for(Persona per:p){
-                String cad=per.getNombre()+"-"+per.getDni()+"-"+per.getEmail();
-                pw.println(cad);
-                JOptionPane.showConfirmDialog(null,"Guardado..");
-            }
+                for(Persona per:p){
+                    String cad=per.getNombre()+"-"+per.getDni()+"-"+per.getEmail();
+                    pw.println(cad);
+                }
+            JOptionPane.showConfirmDialog(null,"Guardado..");
             fichero.flush();
             fichero.close();
         }catch(FileNotFoundException e){
@@ -83,6 +83,8 @@ public class Registro {
         }
         return false;
     }
-    
+    public boolean esVacio(){
+        return p.isEmpty();
+    }
     
 }

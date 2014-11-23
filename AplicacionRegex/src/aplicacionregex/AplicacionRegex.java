@@ -53,7 +53,11 @@ public class AplicacionRegex {
                     }break;
                     case 4:{
                         //------------------Guardar en fichero-----------
-                        reg.guardar();
+                        if(!reg.esVacio()){
+                            reg.guardar();
+                        }else{
+                            JOptionPane.showMessageDialog(null,"No hay datos "
+                                    + "a guardar"," ERROR",JOptionPane.WARNING_MESSAGE);    }
                     }break;
                     case 5:{
                         //------------------ salir  ----------------------
